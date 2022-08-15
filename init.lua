@@ -1,4 +1,7 @@
 require('init-packer')
+require('init-mason')
+require('init-mason-lspconfig')
+require('init-lsp')
 
 vim.o.number = true
 vim.o.tabstop = 4

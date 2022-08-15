@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
     }
 
 
+
+
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
@@ -42,16 +44,11 @@ return require('packer').startup(function(use)
 
 
     use {
-
+        'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
-
+        'neovim/nvim-lspconfig'
     }
-    use { 'neovim/nvim-lspconfig', config = function()
-        require('init-lsp')
-    end }
-    use { 'williamboman/mason.nvim',
-        config = function() require("init-mason")
-        end }
+
     use {
         use 'hrsh7th/nvim-cmp', -- Autocompletion plugin
         use 'hrsh7th/cmp-cmdline', -- { name = 'cmdline' }
